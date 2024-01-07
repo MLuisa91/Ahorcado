@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewPuntos"
+        android:layout_width="112dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_weight="1"
+        android:text="Puntos"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/textViewPalabra"
+        app:layout_constraintEnd_toStartOf="@+id/textViewContadorIntentos"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toEndOf="@+id/botonNuevaPalabra"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.684"
+        tools:ignore="MissingConstraints"></TextView>
+
+    <TextView
+        android:id="@+id/textViewContadorPuntos"
+        android:layout_width="92dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="136dp"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.662"
+        app:layout_constraintStart_toEndOf="@+id/textViewPuntos"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewPalabra"
+        android:layout_width="397dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="92dp"
+        android:layout_weight="1"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonNuevaPalabra"
+        tools:ignore="MissingConstraints"></TextView>
+
+    <EditText
+        android:id="@+id/editTextLetraUsuario"
+        android:layout_width="234dp"
+        android:layout_height="61dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="104dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPalabra"
+        app:layout_constraintVertical_bias="0.018"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp"></EditText>
+
+    <TextView
+        android:id="@+id/textViewIntentos"
+        android:layout_width="112dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_weight="1"
+        android:text="Intentos"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/textViewPalabra"
+        app:layout_constraintEnd_toStartOf="@+id/textViewContadorIntentos"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botonNuevaPalabra"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints"></TextView>
+
+    <Button
+        android:id="@+id/botonNuevaPalabra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="68dp"
+        android:layout_weight="1"
+        android:onClick="mostrarPalabra"
+        android:text="Nueva"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,OnClick"
+        tools:layout_editor_absoluteX="16dp"></Button>
+
+    <TextView
+        android:id="@+id/textViewContadorIntentos"
+        android:layout_width="92dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="76dp"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewIntentos"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/botonAdivinar"
+        android:layout_width="121dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="104dp"
+        android:onClick="comprobarLetra"
+        android:text="Advinar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextLetraUsuario"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPalabra"
+        app:layout_constraintVertical_bias="0.029"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewJugador"
+        android:layout_width="191dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="28dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/textViewIntentos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

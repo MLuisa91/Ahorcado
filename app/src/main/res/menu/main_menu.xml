@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/mostrarPalabra"
+    android:title="Mostrar Palabra" />
+    <item
+        android:id="@+id/menu_Ranking"
+        android:title="Ranking" />
+    <item
+        android:id="@+id/SQLite"
+        android:title="Palabras"/>
+<item
+    android:id="@+id/menu_salir"
+    android:title="Salir" />
+</menu>

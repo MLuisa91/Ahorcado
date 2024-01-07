@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="acciones">
+        <item>Selecciona una acción</item>
+        <item>Insertar</item>
+        <item>Eliminar</item>
+        <item>Modificar</item>
+        <item>Listar</item>
+    </string-array>
+</resources>
