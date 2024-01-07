@@ -27,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
     private TextView tVPalabra;
     private String palabra;
     private EditText editTextLetra;
-
     private String letraIntentada;
     private TextView intentosRestantes;
     private int intentos = 5;
